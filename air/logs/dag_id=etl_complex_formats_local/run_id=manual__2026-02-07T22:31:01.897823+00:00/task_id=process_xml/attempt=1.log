@@ -1,0 +1,26 @@
+{"timestamp":"2026-02-07T22:31:04.949779Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-07T22:31:04.950423Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_complex.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-07T22:31:04.958091Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_complex.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-02-07T22:31:04.981598Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:04.982091Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:04.982574Z","level":"info","event":"Current task name:process_xml","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:04.982897Z","level":"info","event":"Dag name:etl_complex_formats_local","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:04.992045Z","level":"info","event":"XML flattened successfully","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.005398Z","level":"info","event":"                               name             mfr  ... calcium iron","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.005693Z","level":"info","event":"0                       Avocado Dip       Sunnydale  ...       0    0","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.005861Z","level":"info","event":"1           Bagels, New York Style         Thompson  ...       8   20","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.005972Z","level":"info","event":"2  Beef Frankfurter, Quarter Pound         Armitage  ...       1    6","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.006281Z","level":"info","event":"3                   Chicken Pot Pie         Lakeson  ...       2   10","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.006419Z","level":"info","event":"4                         Cole Slaw     Fresh Quick  ...       4    2","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.006518Z","level":"info","event":"5                              Eggs        Goodpath  ...       2    4","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.006841Z","level":"info","event":"6                   Hazelnut Spread        Ferreira  ...       6    4","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.006995Z","level":"info","event":"7                      Potato Chips            Lees  ...       0    0","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.007085Z","level":"info","event":"8              Soy Patties, Grilled  Gardenproducts  ...       0    0","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.007225Z","level":"info","event":"9          Truffles, Dark Chocolate        Lyndon's  ...       0    0","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.007436Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.007679Z","level":"info","event":"[10 rows x 17 columns]","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.005630Z","level":"info","event":"Done. Returned value was: /opt/airflow/output/foods_flat.csv","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-07T22:31:05.006129Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019c3a3a-dc26-713a-969a-e29210a708f2'), task_id='process_xml', dag_id='etl_complex_formats_local', run_id='manual__2026-02-07T22:31:01.897823+00:00', try_number=1, dag_version_id=UUID('019c3a3a-95ab-73c3-8ef4-28a342c7e791'), map_index=-1, hostname='62a95f7a5318', context_carrier={}, task=<Task(PythonOperator): process_xml>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 2, 7, 22, 31, 4, 653649, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1522}
+{"timestamp":"2026-02-07T22:31:05.050151Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.050476Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-07T22:31:05.050629Z","level":"info","event":"Task operator:<Task(PythonOperator): process_xml>","logger":"task.stdout"}
